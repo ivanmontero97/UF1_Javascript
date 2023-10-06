@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo</title>
+</head>
+<body>
+    <!-- Esto es una funcion para mostrar alerta de hola mundo cuando pulsa boton-->
+    <script>
+        function alertaHola(){
+        alert("hola mundo");  //Muestra un cuadro emergente con el texto introducido en alert.
+        }
+     
+
+        function alertaAdios(){
+            alert("Esto es lo que tenias que ver");
+        }
+
+        function mostrarTexto() {
+            
+            var texto = document.getElementById("miInput").value; //Encuentra un elemento html por su Id , además le asigna su valor.
+            alert("El texto ingresado es: " + texto);
+        }
+        //funcion para hacer tabla de multiplicar
+        function tablaMultiplicar(){
+            var num = document.getElementById("inputTabla").value;
+            for(let i=0; i<=10; i++){
+                var resultado = num * i;
+                console.log(num + " * " + i + " = " + resultado);
+            }
+        }
+    </script>
+    <!-- Esto es el boton-->
+    <button onclick="alertaHola()">Dice Hola
+    </button>
+    <!-- Esto es el texto a pasar el raton por encima-->
+    <div onmouseover="alertaAdios()">
+        <span>
+            <p>Esto es un div y si pasas el raton por encima veras algo.</p>
+        </span>
+    </div>
+    <!-- Esto es el cuadro de input de texto-->
+    <div>
+        <input type="text" id="miInput" onchange="mostrarTexto()">
+    </div>
+    <!-- Este es el input para la tabla de multiplicar-->
+    <div>
+        <p>Escribe un numero para  hacer una tabla de multiplicar: </p>
+        <input type="text" id="inputTabla" min="0" max="10" onchange="tablaMultiplicar()">
+    </input>
+    </div>
+
+</body>
+</html>
