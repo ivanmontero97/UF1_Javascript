@@ -17,7 +17,29 @@ function RGB(){
     // Pedir al usuario ( nº Filas y columnas) crear a la página html una tabla dinámica que muestre los números (fila y columna).
     // tr = document.createElement("tr");
     //tr.appendChild(td);
-function tablaDinamica()
-{
-    
-}
+   
+    function tablaDinamica()
+    {
+        let filas = parseInt(prompt("Introduce el número de filas "));
+        let columnas = parseInt(prompt("Introduce el número de columnas "));
+        let tabla = document.createElement('table');
+
+        for( let i=0; i <= filas ; i ++){
+            let tr = document.createElement('tr');
+            for( let x =0 ; x<= columnas ; x++){            
+            
+                let td = document.createElement('td');
+                let txt = document.createTextNode(`${i}.${x}`);
+                td.appendChild(txt);
+                tr.appendChild(td);
+            } 
+            tabla.appendChild(tr);
+        }
+
+        document.body.appendChild(tabla);
+
+      
+    }
+
+//td.style.setBackgroundColor("Red");
+//td.style.width="20px";

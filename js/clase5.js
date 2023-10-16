@@ -24,14 +24,7 @@ function llamadaTelf()
     console.log( "El importe total es de " + ImporteEuros + " euros y " + ImporteCentimos + " centimos");
 }
 
-//Programa que pide 3 numeros al usuario y los devuele en hexadecimal y representando un color RGB.
-function colorRGB(){
-    
-}
 
-// Pedir al usuario ( nº Filas y columnas) crear a la página html una tabla dinámica que muestre los números (fila y columna).
-// tr = document.createElement("tr");
-//tr.appendChild(td);
 
 
 
