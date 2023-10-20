@@ -49,3 +49,15 @@ function contarLetras(){
    console.log(comparativa);
 }
 //Demanar 2 cadenes y comprovar si tenen la mateixa longitud
+function comprobarCadenas(){
+// Pedir las dos cadenas al user
+var cadena1 = prompt("Introduce la primera cadena:");
+var cadena2 = prompt("Introduce la segunda cadena:");
+
+// Comprueba la longitud de las cadenas
+if (cadena1.length === cadena2.length) {
+  console.log("Las dos cadenas tienen la misma longitud.");
+} else {
+  console.log("Las dos cadenes no tienen la misma longitud.");
+}
+};
